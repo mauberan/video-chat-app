@@ -1,11 +1,11 @@
-const socket = io("/demos/video-chat-app/");
+const socket = io("/");
 const videoGrid = document.getElementById("video-grid");
 const myVideo = document.createElement("video");
 myVideo.muted = true;
 var peer = new Peer(undefined, {
-  path: "/demos/video-chat-app/peerjs",
-host: "/demos/video-chat-app/",
-port: "5000",
+  path: "/peerjs",
+host: "/",
+port: "80",
 });
 let myVideoStream;
 navigator.mediaDevices
