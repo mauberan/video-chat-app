@@ -1,4 +1,4 @@
-const socket = io("/");
+const socket = io("/demos/video-chat-app/");
 const videoGrid = document.getElementById("video-grid");
 const myVideo = document.createElement("video");
 myVideo.muted = true;
