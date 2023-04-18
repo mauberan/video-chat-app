@@ -4,8 +4,8 @@ const myVideo = document.createElement("video");
 myVideo.muted = true;
 var peer = new Peer(undefined, {
   path: "/peerjs",
-host: "/",
-port: "80",
+host: "/demos/video-chat-app",
+port: "5000",
 });
 let myVideoStream;
 navigator.mediaDevices
