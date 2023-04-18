@@ -11,7 +11,7 @@ const peerServer = ExpressPeerServer(server, {
 app.use("/demos/video-chat-app/peerjs", peerServer);
 app.use(express.static("public"));
 app.get("/", (req, res) => {
-res.redirect(`/${uuidv4()}`);
+res.redirect(`/demos/video-chat-app/${uuidv4()}`);
 });
 app.get("/demos/video-chat-app/:room", (req, res) => {
 res.render("room", { roomId: req.param.room });
